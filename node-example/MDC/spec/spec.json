@@ -1,19 +1,19 @@
 {
-  "name": "NRK",
+  "name": "MDC",
   "engine": {
     "authorityRound": {
       "params": {
-        "stepDuration": "5",
+        "stepDuration": "3",
         "blockReward": "0xDE0B6B3A7640000",
-        "blockRewardContractAddress": "0x7429fB101C317743369f3A161A6Ee78c3Ac45ADd",
+        "blockRewardContractAddress": "0x7A239e22B71cDD9A2dA66F35Bd946848ab70E6b6",
         "blockRewardContractTransition": 100,
         "validators": {
           "multi": {
             "0": {
-              "list": ["0x878e1d7bd9e68830d1eac8f708898c0778111a5e"]
+              "list": ["0xa353775a00f633ec41dab0e42bfb3b77a2894906"]
             },
             "100": {
-              "safeContract": "0x8db1436097E3d16DD366c138F6953Fb7ee9a96Ad"
+              "safeContract": "0x97547762d01e8b256eE5dfa3dDf6EEd30eB83e1B"
             }
           }
         }
@@ -24,7 +24,7 @@
     "gasLimitBoundDivisor": "0x400",
     "maximumExtraDataSize": "0x20",
     "minGasLimit": "0x1B58",
-    "networkID" : "0x13C91",
+    "networkID" : "0xE789",
     "eip155Transition": 0,
     "validateChainIdTransition": 0,
     "eip140Transition": 0,
@@ -36,18 +36,21 @@
     "eip161abcTransition": "0x0",
     "eip161dTransition": "0x0",
     "eip98Transition": "0x7fffffffffffff",
-    "eip145Transition": "0x96",
-    "eip1014Transition": "0x96",
-    "eip1052Transition": "0x96",
-    "eip1283Transition": "0x96",
-    "eip1344Transition": "0x96",
-    "eip1706Transition": "0x96",
-    "eip1884Transition": "0x96",
-    "eip2028Transition": "0x96",
-    "eip2929Transition": "0x96",
-    "eip2930Transition": "0x96",
+    "eip145Transition": "0x65",
+    "eip1014Transition": "0x65",
+    "eip1052Transition": "0x65",
+    "eip1283Transition": "0x65",
+    "eip1344Transition": "0x65",
+    "eip1706Transition": "0x65",
+    "eip1884Transition": "0x65",
+    "eip2028Transition": "0x65",
+    "eip2929Transition": "0x65",
+    "eip2930Transition": "0x65",
+    "eip1559Transition": "0x2AD6F",
     "maxCodeSize": 124576,
-    "maxCodeSizeTransition": "0x0"
+    "eip1559BaseFeeMaxChangeDenominator": "0x8",
+    "eip1559ElasticityMultiplier": "0x2",
+    "eip1559BaseFeeInitialValue": "0x3B9ACA00"
   },
   "genesis": {
     "seal": {
@@ -69,6 +72,6 @@
       "0x0000000000000000000000000000000000000007": { "builtin": { "name": "alt_bn128_mul", "pricing": { "0": { "price": { "alt_bn128_const_operations": { "price": 4000 } } }, "0x65": { "info": "EIP-1108 Istanbul HF", "price": { "alt_bn128_const_operations": { "price": 6000 } } } } } },
       "0x0000000000000000000000000000000000000008": { "builtin": { "name": "alt_bn128_pairing", "pricing": { "0": { "price": { "alt_bn128_pairing": { "base": 100000, "pair": 80000 } } }, "0x65": { "info": "EIP-1108 Istanbul HF", "price": { "alt_bn128_pairing": { "base": 45000, "pair": 34000 } } } } } },
       "0x0000000000000000000000000000000000000009": { "builtin": { "name": "blake2_f", "pricing": { "0x65": { "info": "EIP-152 Istanbul HF", "price": { "blake2_f": { "gas_per_round": 1 } } } } } },
-      "0xc6b9C0D013c6Ee97485E5108435553C1fFE7CB81": { "balance": "2100000000000000000000000000" }
+      "0xFF2D2828C7526bEBaA281A4E21A85f14A958d9db": { "balance": "110000000000000000000000000" }
   }
 }

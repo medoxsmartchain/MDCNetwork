@@ -1,15 +1,15 @@
-# Run a NRK Validator
+# Run a MDC Validator
 ## Setting up a node
-1. Git clone https://github.com/Officialnordek/NRKNetwork.git
+1. Git clone https://github.com/medoxsmartchain/MDCNetwork.git
 
 2. Copy source form node-example to root folder
 ```
-cp -r NRKNetwork/node-example/NRK  /root/
+cp -r MDCNetwork/node-example/MDC  /root/
 ```
 3. Create an Account
 
 ```
-cd /root/NRK
+cd /root/MDC
 chmod +x openethereum
 ./openethereum account new --config nodes/validator/node.toml
 ```
@@ -38,13 +38,13 @@ reseal_on_txs = "none"
 
     Stake
 
-    To stake NRK coin, all you should do is sending your NRK coin to the NRK Consensus contract address over the NRK network from the validator address.
-    The NRK Consensus contract address: 0x8db1436097E3d16DD366c138F6953Fb7ee9a96Ad
-    The easiest way to do so, is to import your private key or key-store file to your favourite wallet (for example Metamask), switch network to NRK and send the NRK coin to the Consensus contract address.
+    To stake MDC coin, all you should do is sending your MDC coin to the MDC Consensus contract address over the MDC network from the validator address.
+    The MDC Consensus contract address: 0x97547762d01e8b256eE5dfa3dDf6EEd30eB83e1B
+    The easiest way to do so, is to import your private key or key-store file to your favourite wallet (for example Metamask), switch network to MDC and send the MDC coin to the Consensus contract address.
 
     You can find your key-store (containing your private key) and the password for the created account in:
-    /NRK/nodes/validator/keys/NRK/UTC--xxxx
-    /NRK/nodes/validator/node.pwd
+    /MDC/nodes/validator/keys/MDC/UTC--xxxx
+    /MDC/nodes/validator/node.pwd
 
 6. Wait for 1 cycle (approximately 48 hours).
 
